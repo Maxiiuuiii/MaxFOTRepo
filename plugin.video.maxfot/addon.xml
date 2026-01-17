@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.maxfot" name="MaxFOT" version="1.0.0" provider-name="DeinName">
+  <requires>
+    <!-- Wir brauchen Python 3 für Kodi 19 -->
+    <import addon="xbmc.python" version="3.0.0"/>
+    <!-- Wir brauchen das requests Modul zum Scrapen -->
+    <import addon="script.module.requests" version="1.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="main.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="deDE">MaxFOT Livestream Player</summary>
+    <description lang="deDE">Spielt eingebettete Streams ab.</description>
+    <platform>all</platform>
+    <assets>
+      <!-- Optional: Hier können Icons definiert werden -->
+      <!-- <icon>icon.png</icon> -->
+    </assets>
+  </extension>
+</addon>
